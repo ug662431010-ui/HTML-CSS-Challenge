@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <!-- SVG Logo ตัวอย่าง -->
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="20" fill="blue" />
+        </svg>
+      </div>
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#palestine">Palestine</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#bottom">Bottom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 Introduction Section -->
+  <section id="intro" class="intro">
+    <h1>Build Your Mindset</h1>
+    <p>This section covers half laptop screen height.</p>
+  </section>
+
+  <!-- 🔹 Palestine Cards -->
+  <section id="palestine" class="cards">
+    <h2>Palestine Governorates</h2>
+    <div class="card">
+      <img src="bethlehem.jpg" alt="Bethlehem">
+      <h3>Bethlehem</h3>
+      <p>Short description here...</p>
+    </div>
+    <!-- เพิ่มการ์ดอื่นๆ -->
+  </section>
+
+  <!-- 🔹 Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Subject:</label>
+      <input type="text" name="subject">
+
+      <label>Phone:</label>
+      <input type="number" name="phone" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" pattern=".+@ftu\.ac\.th" required>
+
+      <label>Secret Word:</label>
+      <input type="password" name="secret"
+             minlength="8"
+             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W_]).{8,}"
+             required>
+
+      <label>Message:</label>
+      <textarea name="message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer id="bottom">
+    <p>&copy; 2025 All rights reserved.</p>
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'});">Go to Top</button>
+  </footer>
+
+</body>
+</html>
